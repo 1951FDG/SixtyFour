@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>ProcessTimer App - Advanced Process Monitor App for Mac OS X</title>
@@ -14,7 +14,12 @@
 		<script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script defer type="text/javascript" src="javascripts/semantic.js"></script>
 		<script defer type="text/javascript" src="javascripts/app1.js"></script>
-		<script defer type="text/javascript" src="https://paddle.s3.amazonaws.com/checkout/checkout.js"></script>
+		<script type="text/javascript" src="https://cdn.paddle.com/paddle/paddle.js"></script>
+		<script type="text/javascript">
+			Paddle.Setup({
+				vendor: 415
+			});
+		</script>
 	</head>
 	<body>
 		<div class="ui top fixed blue three item inverted menu">
@@ -24,9 +29,14 @@
 		</div>
 		<div class="ui two column middle aligned stackable page grid">
 			<div class="center aligned column">
-				<div class="ui image animated zoomIn"> <img src="/images/icon_512x512.png" alt="" width="512" height="512"> </div>
+				<div class="ui image animated zoomIn"><img src="images/icon_512x512.png" alt="" width="512" height="512"></div>
 			</div>
-			<div class="center aligned column">
+			<div class="center aligned mobile only column">
+				<a class="ui primary huge labeled icon button download_button" href="ProcessTimer.zip"><i class="download icon"></i>ProcessTimer</a>
+				<div class="ui horizontal divider"> Or </div>
+				<a class="ui primary huge labeled icon button paddle_button" data-product="503389" data-theme="none"><i class="shop icon"></i>ProcessTimer</a>
+			</div>
+			<div class="center aligned tablet computer only column">
 				<a class="ui primary huge labeled icon button download_button" href="ProcessTimer.zip"><i class="download icon"></i>ProcessTimer for OS X</a>
 				<div class="ui horizontal divider"> Or </div>
 				<a class="ui primary huge labeled icon button paddle_button" data-product="503389" data-theme="none"><i class="shop icon"></i>ProcessTimer for OS X</a>
@@ -37,12 +47,12 @@
 			<div class="ui two column stackable page grid">
 				<div class="column">
 					<h3 class="ui center aligned ui header animated rubberBand">The Basics</h3>
-					<h5 class="ui horizontal divider header"><i class="black dashboard icon animated fadeIn"></i></h5>
+					<div class="ui horizontal divider"><i class="black dashboard icon animated fadeIn"></i></div>
 					<p class="animated fadeIn">ProcessTimer displays the architecture, CPU utilization and percentage of real memory used by the process that has GUI focus. Two small windows are used in order to display the CPU percentage and MEM percentage. Colored windows can be created as well! The windows are floating windows, by default they show on top of other windows. The window level of windows can be modified if needed. The update frequency is set to often (1 sec) but can be modified. ProcessTimer can send a specific signal to a process if wanted. Also, ProcessTimer can show/hide a GUI process or quit a process normally.</p>
 				</div>
 				<div class="center aligned tablet mobile only column">
 					<div class="ui bordered fluid image animated zoomIn">
-						<div class="ui 4:3 embed" data-source="vimeo" data-id="151256030" data-icon="video play outline" data-placeholder="/images/ProcessTimer-1.png"> </div>
+						<div class="ui 4:3 embed" data-source="vimeo" data-id="151256030" data-icon="video play outline" data-placeholder="images/ProcessTimer-1.png"></div>
 					</div>
 				</div>
 				<div class="center aligned computer only column">
@@ -51,7 +61,7 @@
 							<div class="content">
 								<div class="center"><i class="link icon inverted huge vimeo"></i></div>
 							</div>
-						</div> <img src="/images/ProcessTimer-1.png" alt="" width="1024" height="768"> </div>
+						</div><img src="images/ProcessTimer-1.png" alt="" width="1024" height="768"></div>
 				</div>
 			</div>
 		</div>
@@ -60,12 +70,12 @@
 			<div class="ui two column stackable computer reversed page grid">
 				<div class="column">
 					<h3 class="ui center aligned ui header animated rubberBand">Advanced Monitoring</h3>
-					<h5 class="ui horizontal divider header"><i class="red heartbeat icon animated fadeIn"></i></h5>
+					<div class="ui horizontal divider"><i class="red heartbeat icon animated fadeIn"></i></div>
 					<p class="animated fadeIn">ProcessTimer follows the process that has GUI focus, the frontmost app, by default. This behavior can be changed by <i>Hold Process</i>, and ProcessTimer will follow the specific process for the remainder of the lifetime of the process, regardless if the frontmost app has changed. <i>Hold Process</i> can be switched on or off. <i>Attach Application</i> is a neat feature that enables you to launch an app if not already open. <i>Attach to Process</i> is another neat feature that can be used to select any running process, regardless if it has a GUI. Aforementioned features automatically activate <i>Hold Process</i>, effectively "attaching" ProcessTimer to the process.</p>
 				</div>
 				<div class="center aligned tablet mobile only column">
 					<div class="ui bordered fluid image animated zoomIn">
-						<div class="ui 4:3 embed" data-source="vimeo" data-id="151259194" data-icon="video play outline" data-placeholder="/images/ProcessTimer-2.png"> </div>
+						<div class="ui 4:3 embed" data-source="vimeo" data-id="151259194" data-icon="video play outline" data-placeholder="images/ProcessTimer-2.png"></div>
 					</div>
 				</div>
 				<div class="center aligned computer only column">
@@ -74,7 +84,7 @@
 							<div class="content">
 								<div class="center"><i class="link icon inverted huge vimeo"></i></div>
 							</div>
-						</div> <img src="/images/ProcessTimer-2.png" alt="" width="1024" height="768"> </div>
+						</div><img src="images/ProcessTimer-2.png" alt="" width="1024" height="768"></div>
 				</div>
 			</div>
 		</div>
@@ -83,12 +93,12 @@
 			<div class="ui two column stackable page grid">
 				<div class="column">
 					<h3 class="ui center aligned ui header animated rubberBand">Useful Tools</h3>
-					<h5 class="ui horizontal divider header"><i class="grey configure icon animated fadeIn"></i></h5>
+					<div class="ui horizontal divider"><i class="grey configure icon animated fadeIn"></i></div>
 					<p class="animated fadeIn">ProcessTimer has several tools to its disposition. <i>Open</i>, can be used to show an app window (if any) if app is an agent. <i>Open at login</i>, is used to set the preference if the app is to be opened at login. <i>Open Preferences File</i>, finds and opens the preferences file (plist) of the app if present (Xcode or other app is required to open). <i>Show Info</i>, shows the Finder info panel for the app. <i>Reveal</i>, shows the app location in Finder. Last but not least, ProcessTimer employs a powerful file manager, a file explorer, to explore the contents or reveal a resource within an app bundle in Finder. <i>File Manager</i> also includes <i>Open With</i> functionality to open selected resource within an app bundle with selected app.</p>
 				</div>
 				<div class="center aligned tablet mobile only column">
 					<div class="ui bordered fluid image animated zoomIn">
-						<div class="ui 4:3 embed" data-source="vimeo" data-id="151260592" data-icon="video play outline" data-placeholder="/images/ProcessTimer-3.png"> </div>
+						<div class="ui 4:3 embed" data-source="vimeo" data-id="151260592" data-icon="video play outline" data-placeholder="images/ProcessTimer-3.png"></div>
 					</div>
 				</div>
 				<div class="center aligned computer only column">
@@ -97,7 +107,7 @@
 							<div class="content">
 								<div class="center"><i class="link icon inverted huge vimeo"></i></div>
 							</div>
-						</div> <img src="/images/ProcessTimer-3.png" alt="" width="1024" height="768"> </div>
+						</div><img src="images/ProcessTimer-3.png" alt="" width="1024" height="768"></div>
 				</div>
 			</div>
 		</div>
@@ -106,12 +116,12 @@
 			<div class="ui two column stackable computer reversed page grid">
 				<div class="column">
 					<h3 class="ui center aligned ui header animated rubberBand">Powerful Screenshot Grabbing</h3>
-					<h5 class="ui horizontal divider header"><i class="brown photo icon animated fadeIn"></i></h5>
+					<div class="ui horizontal divider"><i class="brown photo icon animated fadeIn"></i></div>
 					<p class="animated fadeIn">ProcessTimer also has powerful screenshot grabbing capabilities. It has five options in total. <i>Frontmost -Centered</i> is the most unique of the five, it grabs the frontmost window of the frontmost GUI process, centers the window in such a way that the resulting image has square proportion. If no texture image (256x256 only) is specified, the background is transparent. <i>Frontmost</i> grabs the frontmost window of the frontmost GUI process, the background is transparent. <i>Frontmost -Full</i> grabs the frontmost window of the frontmost GUI process, but the resolution is that of the screen (display) of the window, the background is transparent. <i>All -Full</i> grabs the frontmost window(s) of the frontmost GUI process, same as the aforementioned option, but grabs all windows belonging to the process. <i>All -Full -Extra</i> is the second most unique option, it does the same as <i>All -Full</i> but includes the Desktop background, the Menu bar, the Dock (if not hidden) and any Growl notifications.</p>
 				</div>
 				<div class="center aligned tablet mobile only column">
 					<div class="ui bordered fluid image animated zoomIn">
-						<div class="ui 4:3 embed" data-source="vimeo" data-id="151262730" data-icon="video play outline" data-placeholder="/images/ProcessTimer-4.png"> </div>
+						<div class="ui 4:3 embed" data-source="vimeo" data-id="151262730" data-icon="video play outline" data-placeholder="images/ProcessTimer-4.png"></div>
 					</div>
 				</div>
 				<div class="center aligned computer only column">
@@ -120,19 +130,24 @@
 							<div class="content">
 								<div class="center"><i class="link icon inverted huge vimeo"></i></div>
 							</div>
-						</div> <img src="/images/ProcessTimer-4.png" alt="" width="1024" height="768"> </div>
+						</div><img src="images/ProcessTimer-4.png" alt="" width="1024" height="768"></div>
 				</div>
 			</div>
 		</div>
 		<div class="ui section divider"></div>
 		<div class="ui two column middle aligned stackable page grid">
-			<div class="center aligned column">
+			<div class="center aligned mobile only column">
+				<a class="ui primary huge labeled icon button download_button" href="ProcessTimer.zip"><i class="download icon"></i>ProcessTimer</a>
+				<div class="ui horizontal divider"> Or </div>
+				<a class="ui primary huge labeled icon button paddle_button" data-product="503389" data-theme="none"><i class="shop icon"></i>ProcessTimer</a>
+			</div>
+			<div class="center aligned tablet computer only column">
 				<a class="ui primary huge labeled icon button download_button" href="ProcessTimer.zip"><i class="download icon"></i>ProcessTimer for OS X</a>
 				<div class="ui horizontal divider"> Or </div>
 				<a class="ui primary huge labeled icon button paddle_button" data-product="503389" data-theme="none"><i class="shop icon"></i>ProcessTimer for OS X</a>
 			</div>
 			<div class="center aligned column">
-				<div class="ui image animated zoomIn"> <img src="/images/icon_512x512.png" alt="" width="512" height="512"> </div>
+				<div class="ui image animated zoomIn"><img src="images/icon_512x512.png" alt="" width="512" height="512"></div>
 			</div>
 		</div>
 		<div class="ui page grid">
@@ -141,28 +156,28 @@
 					<a class="item" href="mailto:support@getsixtyfour.com">Contact Us</a>
 				</div>
 				<div class="ui right floated horizontal list">
-					<div class="disabled item" href="#">© 2016 ProcessTimer, Inc.</div>
+					<div class="disabled item">&copy; 2016 ProcessTimer, Inc.</div>
 				</div>
 			</div>
 		</div>
 		<div class="ui modal" data-reveal-attribute="a" data-animation="fade"><i class="close icon"></i>
 			<div class="content">
-				<div class="ui 4:3 embed" data-source="vimeo" data-id="151256030" data-icon="video play outline" data-placeholder="/images/ProcessTimer-1.png"> </div>
+				<div class="ui 4:3 embed" data-source="vimeo" data-id="151256030" data-icon="video play outline" data-placeholder="images/ProcessTimer-1.png"></div>
 			</div>
 		</div>
 		<div class="ui modal" data-reveal-attribute="b" data-animation="fade"><i class="close icon"></i>
 			<div class="content">
-				<div class="ui 4:3 embed" data-source="vimeo" data-id="151259194" data-icon="video play outline" data-placeholder="/images/ProcessTimer-2.png"> </div>
+				<div class="ui 4:3 embed" data-source="vimeo" data-id="151259194" data-icon="video play outline" data-placeholder="images/ProcessTimer-2.png"></div>
 			</div>
 		</div>
 		<div class="ui modal" data-reveal-attribute="c" data-animation="fade"><i class="close icon"></i>
 			<div class="content">
-				<div class="ui 4:3 embed" data-source="vimeo" data-id="151260592" data-icon="video play outline" data-placeholder="/images/ProcessTimer-3.png"> </div>
+				<div class="ui 4:3 embed" data-source="vimeo" data-id="151260592" data-icon="video play outline" data-placeholder="images/ProcessTimer-3.png"></div>
 			</div>
 		</div>
 		<div class="ui modal" data-reveal-attribute="d" data-animation="fade"><i class="close icon"></i>
 			<div class="content">
-				<div class="ui 4:3 embed" data-source="vimeo" data-id="151262730" data-icon="video play outline" data-placeholder="/images/ProcessTimer-4.png"> </div>
+				<div class="ui 4:3 embed" data-source="vimeo" data-id="151262730" data-icon="video play outline" data-placeholder="images/ProcessTimer-4.png"></div>
 			</div>
 		</div>
 	</body>

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>SixtyFour App - Memory Optimizer App for Mac OS X</title>
@@ -14,7 +14,12 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
 		<script type="text/javascript" src="https://www.google.com/jsapi?autoload=%7B%22modules%22%3A%5B%7B%22name%22%3A%22visualization%22%2C%22version%22%3A%221.1%22%2C%22callback%22%3A%22drawVisualization()%22%7D%5D%7D"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script async type="text/javascript" src="https://paddle.s3.amazonaws.com/checkout/checkout.js"></script>
+		<script type="text/javascript" src="https://cdn.paddle.com/paddle/paddle.js"></script>
+		<script type="text/javascript">
+			Paddle.Setup({
+				vendor: 415
+			});
+		</script>
 		<script>
 			(function(i, s, o, g, r, a, m) {
 				i['GoogleAnalyticsObject'] = r;
@@ -35,166 +40,127 @@
 	</head>
 	<body>
 		<div class="main">
+			<div class="ui top fixed three item menu">
+				<a class="active item" data-tab="first"><i class="home icon"></i>Home</a>
+				<a class="item" data-tab="second"><i class="book icon"></i>Docs</a>
+				<a class="item" data-tab="third"><i class="life ring icon"></i>FAQs</a>
+			</div>
 			<div class="ui grid container">
-				<div class="ui top fixed borderless menu">
-					<div class="ui medium header horizontally fitted item"><span class="sub header">A Memory Optimizer for Mac</span> </div>
-					<div class="right menu">
-						<div class="fitted item">
-							<div class="ui buttons"><a class="ui large primary icon button" href="SixtyFour%201.0.zip" data-title="Download" data-position="bottom center"><i class="download icon"></i>
-						</a><a class="ui large secondary icon button paddle_button" data-product="493518" data-theme="none" data-title="Purchase" data-position="bottom center"><i class="shop icon"></i>
-							</a><a class="ui large secondary icon google plus button" href="mailto:support@getsixtyfour.com" data-title="Contact Us" data-position="bottom center"><i class="mail icon"></i>
-							</a></div>
-						</div>
-					</div>
+				<div class="column">
+					<div class="ui hidden divider"></div>
 				</div>
-				<div class="row"></div>
-				<div class="row"></div>
-				<div class="row"></div>
 			</div>
 			<div class="section ui active tab" data-tab="first">
 				<div class="ui basic vertical segment">
 					<div class="ui grid container">
 						<div class="row">
-							<div class="column">
-								<p>Not all Macs are created equal! Not every Mac comes with the <abbr title="Random Access Memory">RAM</abbr> required to open and run a dozen memory-hungry Mac apps. Not everyone can afford the latest and greatest Mac that’s loaded with lots of <abbr title="Random Access Memory">RAM</abbr>.</p>
-								<p>If you intend to run more apps at the same time, and, at the same time, maintain system performance, but can’t upgrade to the newer, faster Macs with more <abbr title="Random Access Memory">RAM</abbr>, this is the app for you! All you need is a 64-bit Intel-powered Mac, or even a G5-powered PowerPC Mac.</p>
-								<p>"SixtyFour is one of those rare Mac apps that helps you keep your Mac longer, even when today’s apps are 64-bit and require much more <abbr title="Random Access Memory">RAM</abbr> than Macs of just a few years ago." - <cite><a href="http://www.mac360.com/2012/06/how-to-make-apps-open-faster-on-your-mac-use-less-memory-on-low-ram-macs/" target="_blank">Mac360</a></cite></p>
-							</div>
-						</div>
-						<div class="row">
 							<div class="center aligned column">
-								<div class="devicem">
-									<div class="mbp">
-										<div class="ui shape">
-											<div class="sides">
-												<div class="active imga side">
-													<div class="ui dimmer">
-														<div class="content">
-															<div class="center"><i class="link icon inverted huge zoom"></i> </div>
-														</div>
-													</div>
-												</div>
-												<div class="imgb side">
-													<div class="ui dimmer">
-														<div class="content">
-															<div class="center"><i class="link icon inverted huge zoom"></i> </div>
-														</div>
-													</div>
-												</div>
-												<div class="imgc side">
-													<div class="ui dimmer">
-														<div class="content">
-															<div class="center"><i class="link icon inverted huge zoom"></i> </div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="bas"><span></span> </div>
-								</div>
-								<div>
-									<div class="ui tiny icon button" data-animation="flip" title="Flip Left" data-direction="left"><i class="left long arrow icon"></i> </div>
-									<div class="ui tiny icon button" data-animation="flip" title="Flip Up" data-direction="up"><i class="up long arrow icon"></i> </div>
-									<div class="ui tiny icon button" data-animation="flip" title="Flip Down" data-direction="down"><i class="down long arrow icon"></i> </div>
-									<div class="ui tiny icon button" data-animation="flip" title="Flip Right" data-direction="right"><i class="right long arrow icon"></i> </div>
-									<div class="ui tiny icon button" title="Flip Over" data-animation="flip" data-direction="over"><i class="retweet icon"></i> </div>
-									<div class="ui tiny icon button" title="Flip Back" data-animation="flip" data-direction="back"><i class="flipped retweet icon"></i> </div>
+								<p><img class="ui centered image animated zoomIn" src="images/SixtyFourIcon.png" alt="" width="128" height="128"></p>
+								<div class="ui horizontal list">
+									<div class="disabled item">A Memory Optimizer for Mac</div>
 								</div>
 							</div>
 						</div>
 						<div class="mobile only row">
 							<div class="center aligned column">
-								<p><a class="ui circular primary massive button" href="SixtyFour%201.0.zip"><i class="download icon"></i>Download Now</a> </p>
+								<p>
+									<a class="ui circular grey massive icon button download_button" href="SixtyFour%201.0.zip" data-html="Download" data-position="top center"><i class="download icon"></i></a>
+									<a class="ui circular secondary massive icon button paddle_button" data-html="Purchase" data-position="top center" data-product="493518" data-theme="none"><i class="shop icon"></i></a>
+									<a class="ui circular secondary massive icon button" href="mailto:support@getsixtyfour.com" data-html="Contact Us" data-position="top center"><i class="mail icon"></i></a>
+								</p>
 							</div>
 						</div>
 						<div class="tablet computer only row">
 							<div class="center aligned column">
-								<p><a class="ui circular primary massive button" href="SixtyFour%201.0.zip"><i class="download icon"></i>Download SixtyFour</a> </p>
+								<p>
+									<a class="ui circular grey massive button download_button" href="SixtyFour%201.0.zip" data-html="<p style='text-align:center;'>All you need is a 64-bit Intel-powered Mac, or even a G5-powered PowerPC Mac</p>" data-position="top center"><i class="download icon"></i>SixtyFour for OS X</a>
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="ui basic vertical segment">
-					<div class="ui center aligned grid container">
-						<div class="column">
+					<div class="ui grid container">
+						<div class="center aligned column">
 							<h1 class="ui header">Boost Your Old Mac's Performance</h1>
-							<div class="ui horizontal divider"><i class="rocket icon"></i> </div>
+							<div class="ui horizontal divider"><i class="rocket icon"></i></div>
 							<p class="lead">Apps running in 32-bit mode take up far less memory.</p>
 						</div>
 					</div>
 					<div class="ui grid container">
 						<div class="row">
 							<div class="column">
-								<p>If your Mac is older, or short on <abbr title="Random Access Memory">RAM</abbr>, SixtyFour can help you reduce memory usage. SixtyFour facilitates the setting of a preference to force a 64-bit app to open in 32-bit mode. Opening a 64-bit app in 32-bit mode, reduces its memory usage by at least 10% and commonly as much as 50%. That means you can keep your Mac running longer, but running better.</p>
-								<!--<a id="png" class="ui basic loading button" download="SixtyFourChart.png">Printable version</a>-->
-								<div id="visualization" class="visualization"><img class="ui centered image" src="images/SixtyFourChart.png" height="500" alt=""> </div>
+								<p>"SixtyFour is one of those rare Mac apps that help you keep your Mac longer, even when today’s apps are 64-bit and require much more <abbr title="Random Access Memory">RAM</abbr> than Macs of just a few years ago." - <cite><a href="http://www.mac360.com/2012/06/how-to-make-apps-open-faster-on-your-mac-use-less-memory-on-low-ram-macs/" target="_blank">Mac360</a></cite></p>
+								<p>Not all Macs are created equal. Not every Mac comes with the <abbr title="Random Access Memory">RAM</abbr> needed to open and run a dozen <abbr title="Random Access Memory">RAM</abbr>-hungry Mac apps. Not everyone can afford the latest and greatest Mac that’s loaded with lots of app-crushing <abbr title="Random Access Memory">RAM</abbr>.</p>
+								<p>If your Mac is older, or short on speed-inducing <abbr title="Random Access Memory">RAM</abbr>, SixtyFour can help you reduce memory usage. SixtyFour facilitates the setting of a preference to force a 64-bit app to open in 32-bit mode. Opening a 64-bit app in 32-bit mode, reduces its memory usage by at least 10% and commonly as much as 50%.</p>
 							</div>
+						</div>
+						<div class="tablet computer only row">
+							<!--<a id="png" class="ui basic loading button" download="SixtyFourChart.png">Printable version</a>-->
+							<div id="visualization" class="visualization"><img class="ui centered image" src="images/SixtyFourChart.png" height="500" alt=""></div>
 						</div>
 					</div>
 				</div>
 				<div class="ui basic vertical segment">
-					<div class="ui center aligned grid container">
-						<div class="column">
+					<div class="ui grid container">
+						<div class="center aligned column">
 							<h1 class="ui header">Feature Highlights</h1>
-							<div class="ui horizontal divider"><i class="star icon"></i> </div>
-							<p class="lead">SixtyFour is a very complete app, with some interesting extra features.</p>
+							<div class="ui horizontal divider"><i class="star icon"></i></div>
+							<p class="lead">Want more? Check out these cool features!</p>
 						</div>
 					</div>
 					<div class="ui grid container">
-						<div class="row">
-							<div class="column">
-								<div class="ui stackable three cards">
-									<div class="card">
-										<a class="dimmable image" data-modal="a">
-											<div class="imga"></div>
-											<div class="ui dimmer">
-												<div class="content">
-													<div class="center"><i class="link icon inverted huge zoom"></i> </div>
-												</div>
+						<div class="column">
+							<div class="ui stackable three cards">
+								<div class="card">
+									<a class="dimmable image" data-modal="a">
+										<div class="imga"></div>
+										<div class="ui dimmer">
+											<div class="content">
+												<div class="center"><i class="link icon inverted huge zoom"></i></div>
 											</div>
-										</a>
-										<div class="content">
-											<div class="center aligned header">SixtyFour</div>
-											<div class="description">SixtyFour presents a list of 64-bit apps that can open in 32-bit mode. Check those 64-bit apps you want to run in 32-bit mode, and you’re good to go.</div>
 										</div>
-										<div class="center aligned extra content">
-											<a id="a"> <i class="photo icon"></i> View Screenshot </a>
-										</div>
+									</a>
+									<div class="content">
+										<div class="center aligned header">SixtyFour</div>
+										<div class="description">SixtyFour presents a list of 64-bit apps that can open in 32-bit mode. Check those 64-bit apps you want to run in 32-bit mode, and you’re good to go.</div>
 									</div>
-									<div class="card">
-										<a class="dimmable image" data-modal="b">
-											<div class="imgb"></div>
-											<div class="ui dimmer">
-												<div class="content">
-													<div class="center"><i class="link icon inverted huge zoom"></i> </div>
-												</div>
-											</div>
-										</a>
-										<div class="content">
-											<div class="center aligned header">Quick Look plug-in</div>
-											<div class="description">SixtyFour extends Quick Look’s standard functionality to display extra info: app architectures, app platform info and app version.</div>
-										</div>
-										<div class="center aligned extra content">
-											<a id="b"> <i class="photo icon"></i> View Screenshot </a>
-										</div>
+									<div class="center aligned extra content">
+										<a id="a"><i class="photo icon"></i> View Screenshot </a>
 									</div>
-									<div class="card">
-										<a class="dimmable image" data-modal="c">
-											<div class="imgc"></div>
-											<div class="ui dimmer">
-												<div class="content">
-													<div class="center"><i class="link icon inverted huge zoom"></i> </div>
-												</div>
+								</div>
+								<div class="card">
+									<a class="dimmable image" data-modal="b">
+										<div class="imgb"></div>
+										<div class="ui dimmer">
+											<div class="content">
+												<div class="center"><i class="link icon inverted huge zoom"></i></div>
 											</div>
-										</a>
-										<div class="content">
-											<div class="center aligned header">SixtyFour Agent</div>
-											<div class="description">SixtyFour Agent is a standalone app, which displays the bit mode of an app when launched. It can help you determine if an app opens in 32-bit mode.</div>
 										</div>
-										<div class="center aligned extra content">
-											<a id="c"> <i class="photo icon"></i> View Screenshot </a>
+									</a>
+									<div class="content">
+										<div class="center aligned header">Quick Look plug-in</div>
+										<div class="description">SixtyFour extends Quick Look’s standard functionality to display extra info: app architectures, app platform info and app version.</div>
+									</div>
+									<div class="center aligned extra content">
+										<a id="b"><i class="photo icon"></i> View Screenshot </a>
+									</div>
+								</div>
+								<div class="card">
+									<a class="dimmable image" data-modal="c">
+										<div class="imgc"></div>
+										<div class="ui dimmer">
+											<div class="content">
+												<div class="center"><i class="link icon inverted huge zoom"></i></div>
+											</div>
 										</div>
+									</a>
+									<div class="content">
+										<div class="center aligned header">SixtyFour Agent</div>
+										<div class="description">SixtyFour Agent is a standalone app, which displays the bit mode of an app when launched. It can help you determine if an app opens in 32-bit mode.</div>
+									</div>
+									<div class="center aligned extra content">
+										<a id="c"><i class="photo icon"></i> View Screenshot </a>
 									</div>
 								</div>
 							</div>
@@ -202,61 +168,64 @@
 					</div>
 				</div>
 				<div class="ui basic vertical segment">
-					<div class="ui center aligned grid container">
-						<div class="column">
+					<div class="ui grid container">
+						<div class="center aligned column">
 							<h1 class="ui header">What Our Customers Said</h1>
-							<div class="ui horizontal divider"><i class="user icon"></i> </div>
+							<div class="ui horizontal divider"><i class="user icon"></i></div>
 							<p class="lead">Don’t take our word. See our testimonials.</p>
 						</div>
 					</div>
 					<div class="ui grid container">
-						<div class="row">
-							<div class="column">
-								<div class="ui comments">
-									<div class="comment">
-										<a class="avatar"> <img src="images/about_mu.png" alt=""> </a>
-										<div class="content"> <a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Anthony-Angelo</a>
-											<div class="metadata">
-												<div class="date">Jan 13, 2015</div>
-											</div>
-											<div class="text">SixtyFour really helped my 2006 iMac have a second life. What I thought was a failing computer, was just one that couldn't handle as much memory as some of the 64-bit programs were taking up. Many of those programs were able to drop to 32-bit and left the system with a lot more working memory. Recommend!</div>
+						<div class="column">
+							<div class="ui comments">
+								<div class="comment">
+									<a class="avatar"><img src="images/about_mu.png" alt=""></a>
+									<div class="content">
+										<a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Anthony-Angelo</a>
+										<div class="metadata">
+											<div class="date">Jan 13, 2015</div>
 										</div>
+										<div class="text">SixtyFour really helped my 2006 iMac have a second life. What I thought was a failing computer, was just one that couldn't handle as much memory as some of the 64-bit programs were taking up. Many of those programs were able to drop to 32-bit and left the system with a lot more working memory. Recommend!</div>
 									</div>
-									<div class="comment">
-										<a class="avatar"> <img src="images/about_mu.png" alt=""> </a>
-										<div class="content"> <a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Ittai</a>
-											<div class="metadata">
-												<div class="date">Oct 04, 2014</div>
-											</div>
-											<div class="text">Great simple UI, easy to use, save more <abbr title="Random Access Memory">RAM</abbr> on my old mac. Good value. Fast support for my question.</div>
+								</div>
+								<div class="comment">
+									<a class="avatar"><img src="images/about_mu.png" alt=""></a>
+									<div class="content">
+										<a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Ittai</a>
+										<div class="metadata">
+											<div class="date">Oct 04, 2014</div>
 										</div>
+										<div class="text">Great simple UI, easy to use, save more <abbr title="Random Access Memory">RAM</abbr> on my old mac. Good value. Fast support for my question.</div>
 									</div>
-									<div class="comment">
-										<a class="avatar"> <img src="images/about_mu.png" alt=""> </a>
-										<div class="content"> <a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Doron Kramarczyk</a>
-											<div class="metadata">
-												<div class="date">Oct 03, 2014</div>
-											</div>
-											<div class="text">Not the best UI, but does what it says. Saves memory on older devices.</div>
+								</div>
+								<div class="comment">
+									<a class="avatar"><img src="images/about_mu.png" alt=""></a>
+									<div class="content">
+										<a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Doron Kramarczyk</a>
+										<div class="metadata">
+											<div class="date">Oct 03, 2014</div>
 										</div>
+										<div class="text">Not the best UI, but does what it says. Saves memory on older devices.</div>
 									</div>
-									<div class="comment">
-										<a class="avatar"> <img src="images/about_mu.png" alt=""> </a>
-										<div class="content"> <a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Tom Tsui</a>
-											<div class="metadata">
-												<div class="date">Oct 31, 2011</div>
-											</div>
-											<div class="text">Memory is king. By forcing some apps into 32-bit mode does save me more <abbr title="Random Access Memory">RAM</abbr> for running memory-hungry applications.</div>
+								</div>
+								<div class="comment">
+									<a class="avatar"><img src="images/about_mu.png" alt=""></a>
+									<div class="content">
+										<a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Tom Tsui</a>
+										<div class="metadata">
+											<div class="date">Oct 31, 2011</div>
 										</div>
+										<div class="text">Memory is king. By forcing some apps into 32-bit mode does save me more <abbr title="Random Access Memory">RAM</abbr> for running memory-hungry applications.</div>
 									</div>
-									<div class="comment">
-										<a class="avatar"> <img src="images/about_mu.png" alt=""> </a>
-										<div class="content"> <a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Edgar Cabrera</a>
-											<div class="metadata">
-												<div class="date">Oct 31, 2011</div>
-											</div>
-											<div class="text">It’s a very good little application, quite helpful to run those everyday applications in 32-bit mode in Lion, i.e., Safari, Mail, WebProcess, etc., to reduce memory usage. For more demanding applications, 64-bit is good.</div>
+								</div>
+								<div class="comment">
+									<a class="avatar"><img src="images/about_mu.png" alt=""></a>
+									<div class="content">
+										<a class="author" href="http://www.macupdate.com/app/mac/40405/sixtyfour/reviews" target="_blank" data-html="<div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>" data-offset="14" data-position="right center" data-variation="mini">Edgar Cabrera</a>
+										<div class="metadata">
+											<div class="date">Oct 31, 2011</div>
 										</div>
+										<div class="text">It’s a very good little application, quite helpful to run those everyday applications in 32-bit mode in Lion, i.e., Safari, Mail, WebProcess, etc., to reduce memory usage. For more demanding applications, 64-bit is good.</div>
 									</div>
 								</div>
 							</div>
@@ -264,39 +233,42 @@
 					</div>
 				</div>
 				<div class="ui basic vertical segment">
-					<div class="ui center aligned grid container">
-						<div class="column">
+					<div class="ui grid container">
+						<div class="center aligned column">
 							<h1 class="ui header">Awards Won</h1>
-							<div class="ui horizontal divider"><i class="trophy icon"></i> </div>
+							<div class="ui horizontal divider"><i class="trophy icon"></i></div>
 							<p class="lead">Here’s just some of the awards SixtyFour has received.</p>
 						</div>
 					</div>
 					<div class="ui grid container">
-						<div class="row">
-							<div class="center aligned column">
-								<p>
-									<a href="http://macdownload.informer.com/sixtyfour/" target="_blank"><img class="ui centered image" src="http://img.informer.com/awards/mi-award-epick5.png" height="129" alt="Mac Informer Editor's Pick Award"> </a> <cite><a href="http://macdownload.informer.com/sixtyfour/" target="_blank">Mac Informer Editor's Pick Award</a></cite> </p>
-							</div>
+						<div class="center aligned column">
+							<p>
+								<a class="badgerender" href="https://macupdate.com/app/mac/40405/sixtyfour" target="mu"><span></span></a>
+							</p>
 						</div>
 					</div>
 				</div>
 				<div class="ui basic vertical segment">
-					<div class="ui center aligned grid container">
-						<div class="column">
+					<div class="ui grid container">
+						<div class="center aligned column">
 							<h1 class="ui header">Get the App</h1>
-							<div class="ui horizontal divider"><i class="road icon"></i> </div>
+							<div class="ui horizontal divider"><i class="road icon"></i></div>
 							<p class="lead">Don’t waste your time. Get it now.</p>
 						</div>
 					</div>
 					<div class="ui grid container">
 						<div class="mobile only row">
 							<div class="center aligned column">
-								<p><a class="ui circular secondary massive button paddle_button" data-product="493518" data-theme="none"><i class="shop icon"></i>Purchase Now</a> </p>
+								<p>
+									<a class="ui circular secondary massive icon button paddle_button" data-product="493518" data-theme="none"><i class="shop icon"></i></a>
+								</p>
 							</div>
 						</div>
 						<div class="tablet computer only row">
 							<div class="center aligned column">
-								<p><a class="ui circular secondary massive button paddle_button" data-product="493518" data-theme="none"><i class="shop icon"></i>Purchase SixtyFour</a> </p>
+								<p>
+									<a class="ui circular secondary massive button paddle_button" data-product="493518" data-theme="none" data-html="<p style='text-align:center;'>If you want to run more apps at the same time, but can’t upgrade to the newer, faster Macs with more RAM, this is the app for you!</p>" data-position="top center"><i class="shop icon"></i>SixtyFour for OS X</a>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -304,229 +276,225 @@
 			</div>
 			<div class="section ui tab" data-tab="second">
 				<div class="ui grid container">
-					<div class="row">
-						<div class="column">
-							<div class="ui tertiary inverted segment">
-								<div class="ui small inverted header"><i class="book icon"></i>
-									<div class="content">Instructions</div>
-								</div>
+					<div class="column">
+						<div class="ui tertiary inverted segment">
+							<div class="ui small inverted header"><i class="book icon"></i>
+								<div class="content">Instructions</div>
 							</div>
-							<div class="ui info small message">Changes made in SixtyFour will be kept across reboots. It is not required to keep SixtyFour running.</div>
-							<div class="ui segment">
-								<div class="ui relaxed list">
-									<div class="item">
-										<div class="content">
-											<div class="header">When the check box for an application is selected !</div>The application will open in 32-bit mode</div>
-									</div>
-									<div class="item">
-										<div class="content">
-											<div class="header">When the check box for an application is <b style="color:#ff4136;">not</b> selected !</div>The application will open in 64-bit mode</div>
-									</div>
-									<div class="item">
-										<div class="content">
-											<div class="header">Configure single volume scanning</div>Choose Preferences… from the application menu</div>
-									</div>
-									<div class="item">
-										<div class="content">
-											<div class="header">Configure SixtyFour Agent to remain active when SixtyFour is not running</div>Choose Window &gt; SixtyFour Agent and check 'Open at Login'</div>
-									</div>
-									<div class="item">
-										<div class="content">
-											<div class="header">Purchase SixtyFour</div>Choose Purchase… from the application menu</div>
-									</div>
-								</div>
-							</div>
-							<div class="ui tertiary inverted segment">
-								<div class="ui small inverted header"><i class="book icon"></i>
-									<div class="content">Features</div>
-								</div>
-							</div>
-							<div class="ui info small message">Please note that the Quick Look plug-in only works on Snow Leopard or higher.</div>
-							<div class="ui items segment">
+						</div>
+						<div class="ui info small message">Changes made in SixtyFour will be kept across reboots. It is not required to keep SixtyFour running.</div>
+						<div class="ui segment">
+							<div class="ui relaxed list">
 								<div class="item">
-									<div class="ui tiny image">
-										<div class="quicklook"></div>
-									</div>
 									<div class="content">
-										<div class="header">Quick Look plug-in</div>
-										<div class="meta"><span class="version">v1.2.0 or later</span> </div>
-										<div class="description">SixtyFour extends Quick Look’s standard functionality to display extra info: app architectures, app platform info and app version. The Quick Look plug-in can be used elsewhere. It is no longer required to fire up the Terminal to get the architectures of an app or inspect the property-list file of an app to get the bundle version.</div>
-										<div class="extra"><span><i class="green check icon"></i>64-bit-capable Intel hardware</span><span class="right floated ui label"><i class="apple icon"></i>OS X 10.6+</span> </div>
-									</div>
+										<div class="header">When the check box for an application is selected !</div>The application will open in 32-bit mode</div>
 								</div>
 								<div class="item">
-									<div class="ui tiny image">
-										<div class="sixtyfour"></div>
-									</div>
 									<div class="content">
-										<div class="header">Single volume scanning</div>
-										<div class="meta"><span class="version">v1.2.0 or later</span> </div>
-										<div class="description">SixtyFour by default scans all attached volumes. While this is great for some, for others it less than optimal (e.g., it may be of little benefit to a user who has three volumes, one for Leopard, Snow Leopard &amp; Lion). Scanning a volume finds all apps even unregistered apps! Scanning a volume also complements the default scanning engine, try it yourself by scanning several volumes one by one and then switch back to the default behavior.</div>
-										<div class="extra"><span><i class="green check icon"></i>G5-based PowerPC or 64-bit-capable Intel hardware</span><span class="right floated ui label"><i class="apple icon"></i>OS X 10.5+</span> </div>
-									</div>
+										<div class="header">When the check box for an application is <b style="color:#ff4136;">not</b> selected !</div>The application will open in 64-bit mode</div>
 								</div>
 								<div class="item">
-									<div class="ui tiny image">
-										<div class="growl"></div>
-									</div>
 									<div class="content">
-										<div class="header">SixtyFour Agent</div>
-										<div class="meta"><span class="version">v1.2.0 or later</span> </div>
-										<div class="description">SixtyFour Agent is a standalone app, which displays the bit mode of an app when launched. It can help you determine if an app opens in 32-bit mode. The app can be set to run at all times, which was a request from a user a while ago. SixtyFour Agent does not require Growl on Snow Leopard or higher (installation of Growl is optional).</div>
-										<div class="extra"><span><i class="green check icon"></i>G5-based PowerPC or 64-bit-capable Intel hardware</span><span class="right floated ui label"><i class="apple icon"></i>OS X 10.5+</span> </div>
-									</div>
+										<div class="header">Configure single volume scanning</div>Choose Preferences… from the application menu</div>
 								</div>
 								<div class="item">
-									<div class="ui tiny image">
-										<div class="activitymonitor"></div>
-									</div>
 									<div class="content">
-										<div class="header">Performance Tools</div>
-										<div class="meta"><span class="version">v1.2.0 or later</span> </div>
-										<div class="description">As an added bonus, the latest version of ProcessTimer is included along with SixtyFour. ProcessTimer can be launched from the application menu, performance tools. It can help you determine whether or not to run an app in 32-bit mode. Other performance tools are also mentioned and can be downloaded manually if not installed yet. It is also possible to suggest more performance tools.</div>
-										<div class="extra"><span><i class="green check icon"></i>G5-based PowerPC or 64-bit-capable Intel hardware</span><span class="right floated ui label"><i class="apple icon"></i>OS X 10.5+</span> </div>
-									</div>
+										<div class="header">Configure SixtyFour Agent to remain active when SixtyFour is not running</div>Choose Window &gt; SixtyFour Agent and check 'Open at Login'</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<div class="header">Purchase SixtyFour</div>Choose Purchase… from the application menu</div>
 								</div>
 							</div>
-							<div class="ui tertiary inverted segment">
-								<div class="ui small inverted header"><i class="book icon"></i>
-									<div class="content">Documentation</div>
+						</div>
+						<div class="ui tertiary inverted segment">
+							<div class="ui small inverted header"><i class="book icon"></i>
+								<div class="content">Features</div>
+							</div>
+						</div>
+						<div class="ui info small message">Please note that the Quick Look plug-in only works on Snow Leopard or higher.</div>
+						<div class="ui items segment">
+							<div class="item">
+								<div class="ui tiny image">
+									<div class="quicklook"></div>
+								</div>
+								<div class="content">
+									<div class="header">Quick Look plug-in</div>
+									<div class="meta"><span class="version">v1.2.0 or later</span></div>
+									<div class="description">SixtyFour extends Quick Look’s standard functionality to display extra info: app architectures, app platform info and app version. The Quick Look plug-in can be used elsewhere. It is no longer required to fire up the Terminal to get the architectures of an app or inspect the property-list file of an app to get the bundle version.</div>
+									<div class="extra"><span><i class="green check icon"></i>64-bit-capable Intel hardware</span><span class="right floated ui label"><i class="apple icon"></i>OS X 10.6+</span></div>
 								</div>
 							</div>
-							<div class="ui info small message">The following features support multiple selection: Open, Open With, Quick Look, and Reveal in Finder.</div>
-							<div class="ui segment">
-								<p>The <b>Open</b> action under the File menu checks if the app to be opened is already running. If the app to be opened is running in a bit mode different from the preferred bit mode, you will be given the opportunity to relaunch the app instead.</p>
-								<p>The <b>Open With</b> action under the File menu opens an app with the selected app. Do this if you want to use a specific app, i.e., AppCleaner, AppDelete, AppZapper, etc., to open the selected app.</p>
-								<p>The <b>Quick Look</b> action under the File menu instantly opens a preview window with the apps selected. SixtyFour keeps the preview window open, letting you select apps until you find the one you want.</p>
-								<p>The <b>Import</b> action under the File menu is to be used in conjunction with the Export action under the File menu.</p>
-								<p>The <b>Export</b> action saves user-specific app preferences. Preferences exported to a file on OS X Lion or higher can only be imported on OS X Lion or higher.</p>
-								<p>The <b>Reveal in Finder</b> action under the File menu does what its name implies. On OS X Snow Leopard or higher, this action is capable of selecting multiple apps in a Finder window if the apps share the same root path.</p>
-								<p>The <b>Keep Arranged By</b> action under the View menu is comprised of Keep Arranged By Name, Keep Arranged By Date Modified and Keep Arranged By Date Created. The list of apps is automatically rearranged by the criteria set.</p>
-								<p>To select all apps in the list, choose Edit &gt; Select All (or press Command-A).</p>
-								<p>To toggle a check box's state, select an app and press space bar. <s>To toggle states of all checkboxes, choose Edit &gt; Select All (or press Command-A) and press space bar.</s> </p>
+							<div class="item">
+								<div class="ui tiny image">
+									<div class="sixtyfour"></div>
+								</div>
+								<div class="content">
+									<div class="header">Single volume scanning</div>
+									<div class="meta"><span class="version">v1.2.0 or later</span></div>
+									<div class="description">SixtyFour by default scans all attached volumes. While this is great for some, for others it less than optimal (e.g., it may be of little benefit to a user who has three volumes, one for Leopard, Snow Leopard &amp; Lion). Scanning a volume finds all apps even unregistered apps! Scanning a volume also complements the default scanning engine, try it yourself by scanning several volumes one by one and then switch back to the default behavior.</div>
+									<div class="extra"><span><i class="green check icon"></i>G5-based PowerPC or 64-bit-capable Intel hardware</span><span class="right floated ui label"><i class="apple icon"></i>OS X 10.5+</span></div>
+								</div>
 							</div>
+							<div class="item">
+								<div class="ui tiny image">
+									<div class="growl"></div>
+								</div>
+								<div class="content">
+									<div class="header">SixtyFour Agent</div>
+									<div class="meta"><span class="version">v1.2.0 or later</span></div>
+									<div class="description">SixtyFour Agent is a standalone app, which displays the bit mode of an app when launched. It can help you determine if an app opens in 32-bit mode. The app can be set to run at all times, which was a request from a user a while ago. SixtyFour Agent does not require Growl on Snow Leopard or higher (installation of Growl is optional).</div>
+									<div class="extra"><span><i class="green check icon"></i>G5-based PowerPC or 64-bit-capable Intel hardware</span><span class="right floated ui label"><i class="apple icon"></i>OS X 10.5+</span></div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="ui tiny image">
+									<div class="activitymonitor"></div>
+								</div>
+								<div class="content">
+									<div class="header">Performance Tools</div>
+									<div class="meta"><span class="version">v1.2.0 or later</span></div>
+									<div class="description">As an added bonus, the latest version of ProcessTimer is included along with SixtyFour. ProcessTimer can be launched from the application menu, performance tools. It can help you determine whether or not to run an app in 32-bit mode. Other performance tools are also mentioned and can be downloaded manually if not installed yet. It is also possible to suggest more performance tools.</div>
+									<div class="extra"><span><i class="green check icon"></i>G5-based PowerPC or 64-bit-capable Intel hardware</span><span class="right floated ui label"><i class="apple icon"></i>OS X 10.5+</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="ui tertiary inverted segment">
+							<div class="ui small inverted header"><i class="book icon"></i>
+								<div class="content">Documentation</div>
+							</div>
+						</div>
+						<div class="ui info small message">The following features support multiple selection: Open, Open With, Quick Look, and Reveal in Finder.</div>
+						<div class="ui segment">
+							<p>The <b>Open</b> action under the File menu checks if the app to be opened is already running. If the app to be opened is running in a bit mode different from the preferred bit mode, you will be given the opportunity to relaunch the app instead.</p>
+							<p>The <b>Open With</b> action under the File menu opens an app with the selected app. Do this if you want to use a specific app, i.e., AppCleaner, AppDelete, AppZapper, etc., to open the selected app.</p>
+							<p>The <b>Quick Look</b> action under the File menu instantly opens a preview window with the apps selected. SixtyFour keeps the preview window open, letting you select apps until you find the one you want.</p>
+							<p>The <b>Import</b> action under the File menu is to be used in conjunction with the Export action under the File menu.</p>
+							<p>The <b>Export</b> action saves user-specific app preferences. Preferences exported to a file on OS X Lion or higher can only be imported on OS X Lion or higher.</p>
+							<p>The <b>Reveal in Finder</b> action under the File menu does what its name implies. On OS X Snow Leopard or higher, this action is capable of selecting multiple apps in a Finder window if the apps share the same root path.</p>
+							<p>The <b>Keep Arranged By</b> action under the View menu is comprised of Keep Arranged By Name, Keep Arranged By Date Modified and Keep Arranged By Date Created. The list of apps is automatically rearranged by the criteria set.</p>
+							<p>To select all apps in the list, choose Edit &gt; Select All (or press Command-A).</p>
+							<p>To toggle a check box's state, select an app and press space bar. <s>To toggle states of all checkboxes, choose Edit &gt; Select All (or press Command-A) and press space bar.</s></p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="section ui tab" data-tab="third">
 				<div class="ui grid container">
-					<div class="row">
-						<div class="column">
-							<div class="ui tertiary inverted segment">
-								<div class="ui small inverted header"><i class="life ring icon"></i>
-									<div class="content">General</div>
+					<div class="column">
+						<div class="ui tertiary inverted segment">
+							<div class="ui small inverted header"><i class="life ring icon"></i>
+								<div class="content">General</div>
+							</div>
+						</div>
+						<div class="ui segment">
+							<div class="ui basic fluid accordion">
+								<div class="title"><i class="dropdown icon"></i>SixtyFour? What is it?</div>
+								<div class="content">
+									<p>SixtyFour is a memory optimizer and system utility for OS X. Its main purpose is the augmentation of overall system performance on low memory systems by reducing the memory overhead associated with apps running in 64-bit mode. This is accomplished by forcing 64-bit apps to open in 32-bit mode.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>How does it work?</div>
+								<div class="content">
+									<p>An app usually contains several versions of the code: a version intended to run on 32-bit processors and another one meant for the more recent 64-bit processors. This is necessary to ensure that the app will run on all Macs that support OS X. SixtyFour analyzes the apps on your Mac and presents a list of 64-bit apps that can open in 32-bit mode. Apps excluded from the list are apps that will not open, apps that will only open in 32-bit mode or 64-bit mode, Java apps and unregistered apps.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>Isn't it risky to force an app to open in 32-bit mode?</div>
+								<div class="content">
+									<p>Forcing a 64-bit app to open in 32-bit mode is safe. However, a very small number of apps (e.g., Mac App Store) may not function properly in 32-bit mode, because they may instantiate a helper app in 64-bit mode. Please contact the developer of the app directly to resolve the problem.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>Wouldn't it be better to force all apps to open in 32-bit mode?</div>
+								<div class="content">
+									<p>On older systems that have little memory available, it is advisable to open an app in 32-bit mode. Apps running in 32-bit mode use significantly less memory than apps running in 64-bit mode. On newer systems that have ample memory available, it is better to open an app in 64-bit mode. Apps running in 64-bit mode can access more memory than apps running in 32-bit mode.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>How much memory will I save?</div>
+								<div class="content">
+									<p>Opening a 64-bit app in 32-bit mode, reduces its memory usage by at least 10% and commonly as much as 50%.</p>
 								</div>
 							</div>
-							<div class="ui segment">
-								<div class="ui basic fluid accordion">
-									<div class="title"><i class="dropdown icon"></i>SixtyFour? What is it?</div>
-									<div class="content">
-										<p>SixtyFour is a memory optimizer and system utility for OS X. Its main purpose is the augmentation of overall system performance on low memory systems by reducing the memory overhead associated with apps running in 64-bit mode. This is accomplished by forcing 64-bit apps to open in 32-bit mode.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>How does it work?</div>
-									<div class="content">
-										<p>An app usually contains several versions of the code: a version intended to run on 32-bit processors and another one meant for the more recent 64-bit processors. This is necessary to ensure that the app will run on all Macs that support OS X. SixtyFour analyzes the apps on your Mac and presents a list of 64-bit apps that can open in 32-bit mode. Apps excluded from the list are apps that will not open, apps that will only open in 32-bit mode or 64-bit mode, Java apps and unregistered apps.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>Isn't it risky to force an app to open in 32-bit mode?</div>
-									<div class="content">
-										<p>Forcing a 64-bit app to open in 32-bit mode is safe. However, a very small number of apps (e.g., Mac App Store) may not function properly in 32-bit mode, because they may instantiate a helper app in 64-bit mode. Please contact the developer of the app directly to resolve the problem.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>Wouldn't it be better to force all apps to open in 32-bit mode?</div>
-									<div class="content">
-										<p>On older systems that have little memory available, it is advisable to open an app in 32-bit mode. Apps running in 32-bit mode use significantly less memory than apps running in 64-bit mode. On newer systems that have ample memory available, it is better to open an app in 64-bit mode. Apps running in 64-bit mode can access more memory than apps running in 32-bit mode.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>How much memory will I save?</div>
-									<div class="content">
-										<p>Opening a 64-bit app in 32-bit mode, reduces its memory usage by at least 10% and commonly as much as 50%.</p>
-									</div>
+						</div>
+						<div class="ui tertiary inverted segment">
+							<div class="ui small inverted header"><i class="life ring icon"></i>
+								<div class="content">Usage</div>
+							</div>
+						</div>
+						<div class="ui segment">
+							<div class="ui basic fluid accordion">
+								<div class="title"><i class="dropdown icon"></i>Is there a way to filter or take out apps from the list?</div>
+								<div class="content">
+									<p>If both the 32-bit button and 64-bit button are selected/not selected, the list will not be filtered. If the 32-bit button is selected and the 64-bit button is not selected, the list will list 64-bit apps that will open in 32-bit mode. If the 32-bit button is not selected and the 64-bit button is selected, the list will list 64-bit apps that will open in 64-bit mode. Note that the filter applied respects the input of the search field.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>An app is not working after being forced to open in 32-bit mode. How do I report it?</div>
+								<div class="content">
+									<p>To report an app, contact us. We will analyze the app to try to understand what is causing the problems you describe, and blacklist the app if necessary.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>Are changes made persistent across reboots?</div>
+								<div class="content">
+									<p>Changes made in SixtyFour will be kept across reboots. Changes made in SixtyFour are specific to the user and are not persistent when switching between user accounts.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>Is SixtyFour required to be running to reflect changes made?</div>
+								<div class="content">
+									<p>It is not required to keep SixtyFour running. For example, all apps forced to open in 32-bit mode will open in 32-bit mode even when SixtyFour is not running.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>SixtyFour Agent does not display the bit mode of all apps launched.</div>
+								<div class="content">
+									<p>SixtyFour Agent post a notification for all apps (excluding background apps).</p>
 								</div>
 							</div>
-							<div class="ui tertiary inverted segment">
-								<div class="ui small inverted header"><i class="life ring icon"></i>
-									<div class="content">Usage</div>
+						</div>
+						<div class="ui tertiary inverted segment">
+							<div class="ui small inverted header"><i class="life ring icon"></i>
+								<div class="content">License</div>
+							</div>
+						</div>
+						<div class="ui segment">
+							<div class="ui basic fluid accordion">
+								<div class="title"><i class="dropdown icon"></i>When will I receive my license?</div>
+								<div class="content">
+									<p>Most payment methods are processed immediately after your purchase. If you have not received your license within 24 hours, please check your spam folder. If you still have not received it, please contact us and notify us of your payment.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>What does the license give rights to?</div>
+								<div class="content">
+									<p>Based on the usage you give to the license you can install it on a different number of computers:</p>
+									<ul>
+										<li>Personal use: A license can be installed on all computers owned by the license owner or where the license owner is the primary user.</li>
+										<li>Professional use: A license is required for each user, even when the license owner owns all the computers.</li>
+									</ul>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>I have lost my license. How do I recover it?</div>
+								<div class="content">
+									<p>We can resend you the license. Contact us and request it.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>I have the license, but SixtyFour does not recognize it.</div>
+								<div class="content">
+									<p>Some email clients truncate attachment filenames. SixtyFour only recognizes the file if it has the extension, .sixtyfour.</p>
 								</div>
 							</div>
-							<div class="ui segment">
-								<div class="ui basic fluid accordion">
-									<div class="title"><i class="dropdown icon"></i>Is there a way to filter or take out apps from the list?</div>
-									<div class="content">
-										<p>If both the 32-bit button and 64-bit button are selected/not selected, the list will not be filtered. If the 32-bit button is selected and the 64-bit button is not selected, the list will list 64-bit apps that will open in 32-bit mode. If the 32-bit button is not selected and the 64-bit button is selected, the list will list 64-bit apps that will open in 64-bit mode. Note that the filter applied respects the input of the search field.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>An app is not working after being forced to open in 32-bit mode. How do I report it?</div>
-									<div class="content">
-										<p>To report an app, contact us. We will analyze the app to try to understand what is causing the problems you describe, and blacklist the app if necessary.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>Are changes made persistent across reboots?</div>
-									<div class="content">
-										<p>Changes made in SixtyFour will be kept across reboots. Changes made in SixtyFour are specific to the user and are not persistent when switching between user accounts.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>Is SixtyFour required to be running to reflect changes made?</div>
-									<div class="content">
-										<p>It is not required to keep SixtyFour running. For example, all apps forced to open in 32-bit mode will open in 32-bit mode even when SixtyFour is not running.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>SixtyFour Agent does not display the bit mode of all apps launched.</div>
-									<div class="content">
-										<p>SixtyFour Agent post a notification for all apps (excluding background apps).</p>
-									</div>
-								</div>
+						</div>
+						<div class="ui tertiary inverted segment">
+							<div class="ui small inverted header"><i class="life ring icon"></i>
+								<div class="content">Other</div>
 							</div>
-							<div class="ui tertiary inverted segment">
-								<div class="ui small inverted header"><i class="life ring icon"></i>
-									<div class="content">License</div>
+						</div>
+						<div class="ui segment">
+							<div class="ui basic fluid accordion">
+								<div class="title"><i class="dropdown icon"></i>I need to report a bug.</div>
+								<div class="content">
+									<p>Too bad you found one. Please do not hesitate to contact us. Your feedback is important to us, as it helps us to improve SixtyFour.</p>
 								</div>
-							</div>
-							<div class="ui segment">
-								<div class="ui basic fluid accordion">
-									<div class="title"><i class="dropdown icon"></i>When will I receive my license?</div>
-									<div class="content">
-										<p>Most payment methods are processed immediately after your purchase. If you have not received your license within 24 hours, please check your spam folder. If you still have not received it, please contact us and notify us of your payment.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>What does the license give rights to?</div>
-									<div class="content">
-										<p>Based on the usage you give to the license you can install it on a different number of computers:</p>
-										<ul>
-											<li>Personal use: A license can be installed on all computers owned by the license owner or where the license owner is the primary user.</li>
-											<li>Professional use: A license is required for each user, even when the license owner owns all the computers.</li>
-										</ul>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>I have lost my license. How do I recover it?</div>
-									<div class="content">
-										<p>We can resend you the license. Contact us and request it.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>I have the license, but SixtyFour does not recognize it.</div>
-									<div class="content">
-										<p>Some email clients truncate attachment filenames. SixtyFour only recognizes the file if it has the extension, .sixtyfour.</p>
-									</div>
+								<div class="title"><i class="dropdown icon"></i>Which languages is SixtyFour available in?</div>
+								<div class="content">
+									<p>As of this moment, SixtyFour is localized in English.</p>
 								</div>
-							</div>
-							<div class="ui tertiary inverted segment">
-								<div class="ui small inverted header"><i class="life ring icon"></i>
-									<div class="content">Other</div>
+								<div class="title"><i class="dropdown icon"></i>SixtyFour is 64-bit only?</div>
+								<div class="content">
+									<p>A 32-bit processor is only capable of running an app in 32-bit mode.</p>
 								</div>
-							</div>
-							<div class="ui segment">
-								<div class="ui basic fluid accordion">
-									<div class="title"><i class="dropdown icon"></i>I need to report a bug.</div>
-									<div class="content">
-										<p>Too bad you found one. Please do not hesitate to contact us. Your feedback is important to us, as it helps us to improve SixtyFour.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>Which languages is SixtyFour available in?</div>
-									<div class="content">
-										<p>As of this moment, SixtyFour is localized in English.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>SixtyFour is 64-bit only?</div>
-									<div class="content">
-										<p>A 32-bit processor is only capable of running an app in 32-bit mode.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>What are the system requirements for SixtyFour?</div>
-									<div class="content">
-										<p>SixtyFour is compatible with any G5-based PowerPC or 64-bit-capable Intel hardware running OS X Leopard, Snow Leopard, Lion, Mountain Lion or Mavericks.</p>
-									</div>
-									<div class="title"><i class="dropdown icon"></i>What payment methods are currently available?</div>
-									<div class="content">
-										<p>Payment services are handled by Paddle; SixtyFour is available using any of the many payment alternatives they support: a variety of credit cards and PayPal.</p>
-									</div>
+								<div class="title"><i class="dropdown icon"></i>What are the system requirements for SixtyFour?</div>
+								<div class="content">
+									<p>SixtyFour is compatible with any G5-based PowerPC or 64-bit-capable Intel hardware running OS X Leopard, Snow Leopard, Lion, Mountain Lion or Mavericks.</p>
+								</div>
+								<div class="title"><i class="dropdown icon"></i>What payment methods are currently available?</div>
+								<div class="content">
+									<p>Payment services are handled by Paddle; SixtyFour is available using any of the many payment alternatives they support: a variety of credit cards and PayPal.</p>
 								</div>
 							</div>
 						</div>
@@ -535,29 +503,18 @@
 			</div>
 		</div>
 		<div class="ui grid container">
-			<div class="row">
-				<div class="center aligned column">
-					<!--<p><a href="#" title="Back to top"><i class="arrow circle outline up big icon"></i></a> </p>-->
-					<p>Copyright &copy; 2011-2015 <a href="mailto:support@getsixtyfour.com">Contact Us</a> </p>
-					<a href="https://macupdate.com/app/mac/40405/sixtyfour" target="mu">
-						<div class="badgerender"><span></span></div>
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="column">
-					<div class="ui hidden divider"></div>
+			<div class="center aligned column">
+				<div class="ui horizontal list">
+					<div class="disabled item">&copy; 2011-2016 SixtyFour, Inc.</div>
 				</div>
 			</div>
 		</div>
-		<div class="ui bottom fixed three item menu"><a class="active item" data-tab="first"><i class="home icon"></i>Home</a><a class="item" data-tab="second"><i class="book icon"></i>Docs</a><a class="item" data-tab="third"><i class="life ring icon"></i>FAQs</a> </div>
 		<div class="ui dimmer page hidden">
-			<div class="ui init modal" data-animation="fade">
+			<!--
+			<div class="ui init medium modal" data-animation="fade">
 				<div class="animated flip icon ddd"></div>
 				<div class="centered header"></div>
 				<div class="content">
-					<p>Not all Macs are created equal! Not every Mac comes with the <abbr title="Random Access Memory">RAM</abbr> required to open and run a dozen memory-hungry Mac apps. Not everyone can afford the latest and greatest Mac that’s loaded with lots of <abbr title="Random Access Memory">RAM</abbr>.</p>
-					<p>If you intend to run more apps at the same time, and, at the same time, maintain system performance, but can’t upgrade to the newer, faster Macs with more <abbr title="Random Access Memory">RAM</abbr>, this is the app for you! All you need is a 64-bit Intel-powered Mac, or even a G5-powered PowerPC Mac.</p>
 					<div class="ui basic center aligned segment">
 						<div class="devicem">
 							<div class="mbp">
@@ -566,36 +523,36 @@
 										<div class="active imga side">
 											<div class="ui dimmer">
 												<div class="content">
-													<div class="center"><i class="link icon inverted huge zoom"></i> </div>
+													<div class="center"><i class="link icon inverted huge zoom"></i></div>
 												</div>
 											</div>
 										</div>
 										<div class="imgb side">
 											<div class="ui dimmer">
 												<div class="content">
-													<div class="center"><i class="link icon inverted huge zoom"></i> </div>
+													<div class="center"><i class="link icon inverted huge zoom"></i></div>
 												</div>
 											</div>
 										</div>
 										<div class="imgc side">
 											<div class="ui dimmer">
 												<div class="content">
-													<div class="center"><i class="link icon inverted huge zoom"></i> </div>
+													<div class="center"><i class="link icon inverted huge zoom"></i></div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="bas"><span></span> </div>
+							<div class="bas"><span></span></div>
 						</div>
 						<div>
-							<div class="ui tiny icon button" data-animation="flip" title="Flip Left" data-direction="left"><i class="left long arrow icon"></i> </div>
-							<div class="ui tiny icon button" data-animation="flip" title="Flip Up" data-direction="up"><i class="up long arrow icon"></i> </div>
-							<div class="ui tiny icon button" data-animation="flip" title="Flip Down" data-direction="down"><i class="down long arrow icon"></i> </div>
-							<div class="ui tiny icon button" data-animation="flip" title="Flip Right" data-direction="right"><i class="right long arrow icon"></i> </div>
-							<div class="ui tiny icon button" title="Flip Over" data-animation="flip" data-direction="over"><i class="retweet icon"></i> </div>
-							<div class="ui tiny icon button" title="Flip Back" data-animation="flip" data-direction="back"><i class="flipped retweet icon"></i> </div>
+							<div class="ui tiny icon button" data-animation="flip" title="Flip Left" data-direction="left"><i class="left long arrow icon"></i></div>
+							<div class="ui tiny icon button" data-animation="flip" title="Flip Up" data-direction="up"><i class="up long arrow icon"></i></div>
+							<div class="ui tiny icon button" data-animation="flip" title="Flip Down" data-direction="down"><i class="down long arrow icon"></i></div>
+							<div class="ui tiny icon button" data-animation="flip" title="Flip Right" data-direction="right"><i class="right long arrow icon"></i></div>
+							<div class="ui tiny icon button" title="Flip Over" data-animation="flip" data-direction="over"><i class="retweet icon"></i></div>
+							<div class="ui tiny icon button" title="Flip Back" data-animation="flip" data-direction="back"><i class="flipped retweet icon"></i></div>
 						</div>
 					</div>
 				</div>
@@ -606,6 +563,7 @@
 					</div>
 				</div>
 			</div>
+-->
 			<div class="ui large basic modal s" data-reveal-class="imga side" data-reveal-id="a" data-reveal-attribute="a" data-animation="fade"><i class="close icon"></i>
 				<div class="imga"></div>
 			</div>
